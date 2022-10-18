@@ -47,7 +47,7 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Date of Birth:</label>
-                    <input placeholder="Enter your Date of Birth"type="text" class="form-control"name="dob" [(ngModel)]="dob">
+                    <input placeholder="Enter your Date of Birth" type="date" name="dob" id="" class="form-control" [(ngModel)]="dob">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Parent Name:</label>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-success" type="button" [disabled]="status"(click)="addStudent()">Submit</button>
+                        <button class="btn btn-success" type="button" (click)="addStudent()">Submit</button>
                       </div>
                 </div>
             </div>

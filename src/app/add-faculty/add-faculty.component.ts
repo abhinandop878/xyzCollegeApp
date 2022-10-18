@@ -16,7 +16,6 @@ export class AddFacultyComponent implements OnInit {
   address=""
   mobileNo=""
   doj=""
-  status:boolean=false
   addFaculty=()=>{
     let data={
       "name":this.name,
@@ -38,7 +37,6 @@ export class AddFacultyComponent implements OnInit {
     this.address=""
     this.mobileNo=""
     this.doj=""
-    this.status=true
   }
   ngOnInit(): void {
   }
