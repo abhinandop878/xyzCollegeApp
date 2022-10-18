@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class AddStudentComponent implements OnInit {
 
   constructor() { }
-
+  status:boolean=false
+  addStudent=()=>{
+    alert("Successfully Added")
+    this.status=true
+  }
   ngOnInit(): void {
   }
 

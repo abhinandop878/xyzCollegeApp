@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class AddFacultyComponent implements OnInit {
 
   constructor() { }
-
+  status:boolean=false
+  addFaculty=()=>{
+    alert("Successfully Added")
+    this.status=true
+  }
   ngOnInit(): void {
   }
 
