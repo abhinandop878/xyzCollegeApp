@@ -9,7 +9,24 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { ViewAllStudentComponent } from './view-all-student/view-all-student.component';
 import { AddFacultyComponent } from './add-faculty/add-faculty.component';
 import { ViewAllFacultyComponent } from './view-all-faculty/view-all-faculty.component';
-
+import { RouterModule, Routes } from '@angular/router';
+const appRoutes:Routes=[
+{
+  path:"",component:AdminLoginComponent
+},
+{
+  path:"/addStudent",component:AddStudentComponent
+},
+{
+  path:"/viewAllStudent",component:ViewAllStudentComponent
+},
+{
+  path:"/addFaculty",component:AddFacultyComponent
+},
+{
+  path:"viewAllFaculty",component:ViewAllFacultyComponent
+}
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +39,8 @@ import { ViewAllFacultyComponent } from './view-all-faculty/view-all-faculty.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

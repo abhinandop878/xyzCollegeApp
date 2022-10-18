@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AdminLoginComponent implements OnInit {
 
   constructor() { }
-
+  adminLogin=()=>{
+    
+  }
   ngOnInit(): void {
   }
 
