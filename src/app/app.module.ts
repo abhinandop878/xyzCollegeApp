@@ -10,6 +10,7 @@ import { ViewAllStudentComponent } from './view-all-student/view-all-student.com
 import { AddFacultyComponent } from './add-faculty/add-faculty.component';
 import { ViewAllFacultyComponent } from './view-all-faculty/view-all-faculty.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 const appRoutes:Routes=[
 {
   path:"",component:AdminLoginComponent
@@ -40,7 +41,8 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
