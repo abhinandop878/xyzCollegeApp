@@ -16,13 +16,13 @@ const appRoutes:Routes=[
   path:"",component:AdminLoginComponent
 },
 {
-  path:"/addStudent",component:AddStudentComponent
+  path:"addStudent",component:AddStudentComponent
 },
 {
-  path:"/viewAllStudent",component:ViewAllStudentComponent
+  path:"viewAllStudent",component:ViewAllStudentComponent
 },
 {
-  path:"/addFaculty",component:AddFacultyComponent
+  path:"addFaculty",component:AddFacultyComponent
 },
 {
   path:"viewAllFaculty",component:ViewAllFacultyComponent

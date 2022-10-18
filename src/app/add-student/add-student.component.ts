@@ -19,7 +19,6 @@ export class AddStudentComponent implements OnInit {
   parentEmail=""
   guardianName=""
   guardianAddress=""
-  status:boolean=false
   addStudent=()=>{
     let data={
       "name":this.name,
@@ -36,7 +35,17 @@ export class AddStudentComponent implements OnInit {
     }
     console.log(data)
     alert("Successfully Added")
-    this.status=true
+    this.name=""
+    this.rollNo=""
+    this.admissionNo=""
+    this.college=""
+    this.department=""
+    this.bloodGroup=""
+    this.dob=""
+    this.parentName=""
+    this.parentEmail=""
+    this.guardianName=""
+    this.guardianAddress=""    
   }
   ngOnInit(): void {
   }
