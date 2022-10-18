@@ -8,6 +8,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { ViewAllStudentComponent } from './view-all-student/view-all-student.component';
 import { AddFacultyComponent } from './add-faculty/add-faculty.component';
+import { ViewAllFacultyComponent } from './view-all-faculty/view-all-faculty.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AddFacultyComponent } from './add-faculty/add-faculty.component';
     AdminLoginComponent,
     AddStudentComponent,
     ViewAllStudentComponent,
-    AddFacultyComponent
+    AddFacultyComponent,
+    ViewAllFacultyComponent
   ],
   imports: [
     BrowserModule,
